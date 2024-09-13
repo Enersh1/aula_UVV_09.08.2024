@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Meu Portfolio</title>
+    <meta name="author" content="Enersh">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+
+    <header>
+        <img src="image_example_.jpg" alt="LOGO">
+        <h1>Bem-vindo ao meu portfólio</h1>
+    </header>
+
+    <body>
+        <div id="container">
+            <div id="esquerda"></div>
+            <div id="direita"></div>
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="home">HOME</a></li>
+
+            <li><a href="experiencias">EXPERIÊNCIAS</a></li>
+
+            <li><a href="portifolio">PORTIFÓLIO</a></li>
+
+            <li><a href="contatos">CONTATOS</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>NOME</h1>
+        <!-- Conteúdo da página como eu insiro uma imagem de fundo na minha página do meu site do meu portifólio, sendo que estou usando HTML e CSS na minha página web? -->
+
+        <section id="home">
+            <img src="image_example_.jpg" alt="" width="150px">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam quis voluptas natus labore
+                reprehenderit modi laboriosam, reiciendis distinctio vel eius incidunt temporibus tempore beatae est
+                nesciunt consectetur ex saepe.</p>
+        </section>
+
+        <section id="experiencias">
+            <img src=" LINK IMAGEM Referência" alt="" width="150px">
+
+            <h2>Minhas Experiências</h2>
+            <p>Aqui eu descreveo minhas experiências profissionais, projetos, e outras informações relevantes.</p>
+        </section>
+
+        <section id="portifolio">
+            <img src=" LINK IMAGEM Referência_3" alt="" width="150px">
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora incidunt, ipsum quo natus vero
+                accusantium minus explicabo, maiores magnam eos, in consequuntur. Quo earum, dolor dolore recusandae
+                quas quam rerum!</p>
+        </section>
+
+        <section id="contatos">
+
+        </section>
+
+        <p>Envie uma solicitação de contato</p>
+
+        <form action="">
+            <label for="Name">Nome:</label>
+            <br>
+            <input type="text" placeholder="name" id="" name="">
+            <br>
+
+            <label for="Name">Sobrenome:</label>
+            <br>
+            <input type="text" placeholder="Sobrenome" id="" name="">
+            <br>
+
+            <label for="email">email:</label>
+            <br>
+            <input name="Email" placeholder="email" type="email">
+            <br>
+
+            <label for="Comentários e Sugestões">Comentários e Sugestões:</label>
+            <br>
+            <input type="date"><br>
+
+
+            <textarea cols="30" rows="10" name="Comentários e Sugestões"
+                placeholder="Comentários e Sugestões"></textarea>
+            <br><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" required>
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p> © 2024 Meu Portfólio </p>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+
+        <a href="https://br.linkedin.com/in/PERFIL_LINKEDIN" target="_blank">
+            <img src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent-Background-PNG-.png"
+                alt="linkedin" width="50px">
+        </a>
+
+        <a href="https://www.instagram.com/PERFIL_INSTAGRAM" target="_blank">
+            <img src="https://p7.hiclipart.com/preview/145/243/586/logo-computer-icons-clip-art-instagram-layout.jpg"
+                alt="instagram" width="50px">
+        </a>
+
+        <a href="https://github.com/Enersh1" target="_blank">
+            <img src="https://toppng.com/uploads/preview/github-logo-transparent-png-11659780101agvzsukgqz.png"
+                alt="github" width="50px">
+
+        </a>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- aulauvv09082024 repositorio de referencia-->
+<!-- https://fonts.google.com/ -->
+<!-- https://www.w3schools.com/cssref/playdemo.php?filename=playcss_justify-content&preval=space-between -->
+<!-- Conteúdo da página como eu insiro uma imagem de fundo na minha página do meu site do meu portifólio, sendo que estou usando HTML e CSS na minha página web? -->
+
+<!-- display: flex;: Aplica Flexbox ao contêiner do menu (ul), permitindo que os itens (li) sejam alinhados e distribuídos facilmente.
+justify-content: center;: Alinha os itens do menu horizontalmente no centro do contêiner.
+margin: 0 15px;: Adiciona um espaçamento horizontal entre cada item de menu (li), criando um espaço uniforme ao redor de cada item. -->
+
+<!-- nav ul li:first-child {
+    /* Estilos para o primeiro item do menu */
+}
+
+nav ul li:last-child {
+    /* Estilos para o último item do menu */
+}
+
+nav ul li:nth-child(2) {
+    /* Estilos para o segundo item do menu */
+} -->
+
+
+
+
+<!-- preciso alinhar os elementos no meu menu, eu usaria justify-content? qual seletor selecionaria todos os elementos do menu, individualmente, para aplicar esse mesmo tipo de espaçamento?
+
+Sim, você pode usar `justify-content` para alinhar os elementos no seu menu. O `justify-content` é uma propriedade do Flexbox que ajuda a distribuir espaço entre e ao redor dos itens em um contêiner flexível. 
+
+Vamos revisar como você pode usar Flexbox para alinhar seus itens de menu e aplicar espaçamento individual a cada item, se necessário.
+
+### Estrutura do Menu com Flexbox
+
+Vou assumir que você já tem o seguinte HTML para o seu menu:
+
+```html
+<header>
+    <nav>
+        <ul>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+```
+
+Aqui está como você pode usar CSS Flexbox para alinhar e espaçar os itens do menu:
+
+### CSS com Flexbox
+
+```css
+/* styles.css */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 60px; /* Espaço para não ficar coberto pelo header fixo */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+```
+
+### Explicação
+
+- **`display: flex;`**: Aplica Flexbox ao contêiner do menu (`ul`), permitindo que os itens (`li`) sejam alinhados e distribuídos facilmente.
+- **`justify-content: center;`**: Alinha os itens do menu horizontalmente no centro do contêiner.
+- **`margin: 0 15px;`**: Adiciona um espaçamento horizontal entre cada item de menu (`li`), criando um espaço uniforme ao redor de cada item.
+
+### Seletores Individuais
+
+Se você precisar aplicar estilos diferentes para itens específicos do menu, você pode usar seletores individuais. Por exemplo:
+
+```css
+nav ul li:first-child {
+    /* Estilos para o primeiro item do menu */
+}
+
+nav ul li:last-child {
+    /* Estilos para o último item do menu */
+}
+
+nav ul li:nth-child(2) {
+    /* Estilos para o segundo item do menu */
+}
+```
+
+Você também pode adicionar classes específicas a cada item para ter controle mais granular:
+
+```html
+<nav>
+    <ul>
+        <li class="menu-item home"><a href="#home">Home</a></li>
+        <li class="menu-item experiencias"><a href="#experiencias">Experiências</a></li>
+        <li class="menu-item projetos"><a href="#projetos">Projetos</a></li>
+        <li class="menu-item contato"><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+```
+
+```css
+/* styles.css */
+.menu-item.home {
+    /* Estilos específicos para o item Home */
+}
+
+.menu-item.experiencias {
+    /* Estilos específicos para o item Experiências */
+}
+
+.menu-item.projetos {
+    /* Estilos específicos para o item Projetos */
+}
+
+.menu-item.contato {
+    /* Estilos específicos para o item Contato */
+}
+```
+
+Essas técnicas devem te ajudar a alinhar e estilizar o menu do seu portfólio da maneira que desejar. Se precisar de mais ajuda com Flexbox ou qualquer outro aspecto do design, estou à disposição! -->
